@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003515"
+    tools:context=".PinAssistResults" >
+    <LinearLayout
+        android:id="@+id/ColumnLnLYID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/SearchHeader"
+        android:background="#999999">
+
+    <TextView
+        android:id="@+id/column_header1"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_weight="0.99"
+        android:background="#999999"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="State" />
+
+        <TextView
+            android:id="@+id/column_header2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.99"
+            android:background="#999999"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="District" />
+
+        <TextView
+            android:id="@+id/column_header3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.99"
+            android:background="#999999"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="Post Office" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ResultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:divider="#000000"
+        android:dividerHeight=".5dp"
+        android:layout_below="@+id/ColumnLnLYID" 
+        android:textColor="#BBBBBB">
+    </ListView>
+
+    <TextView
+        android:id="@+id/SearchHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#282828"
+        android:gravity="left"
+        android:textColor="#EFEFEF" />
+
+</RelativeLayout>

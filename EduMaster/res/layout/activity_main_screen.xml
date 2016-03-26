@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen" >
+
+    <RelativeLayout
+        android:id="@+id/RelMainLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+     </RelativeLayout>
+    <TextView
+        android:id="@+id/Textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RelMainLayout"
+        android:layout_toLeftOf="@+id/RelMainLayout"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="30dp"
+        android:drawableTop="@drawable/favourites4"
+        android:gravity="center"
+        android:text="sample" />
+    <TextView
+        android:id="@+id/Favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/RelMainLayout"
+        android:layout_above="@+id/RelMainLayout"
+        android:layout_marginBottom="50dp"
+        android:drawableTop="@drawable/favourites2"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:text="Favourite" />
+
+    <TextView
+        android:id="@+id/ShareView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Textview1"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/RelMainLayout"
+        android:drawableTop="@drawable/shareicon"
+        android:gravity="center"
+        android:focusable="false"
+        android:clickable="true"
+        android:text="Share" />
+</RelativeLayout>

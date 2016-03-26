@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/score_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp" >
+ </RelativeLayout>
+
+    <TextView
+        android:id="@+id/WrongCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/UnAnsweredCount"
+        android:layout_alignLeft="@+id/CorrectCount"
+        android:text="WrongCount"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/WrongText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/UnAnsweredText"
+        android:layout_below="@+id/CorrectText"
+        android:text="Wrong :"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/CorrectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TotalText"
+        android:layout_alignLeft="@+id/UnAnsweredText"
+        android:text="Correct:"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/CorrectCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TotalCount"
+        android:layout_alignLeft="@+id/TotalCount"
+        android:text="CorrectCount"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/UnAnsweredCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/WrongCount"
+        android:layout_below="@+id/WrongText"
+        android:text="UnAnwCount"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TotalCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TotalText"
+        android:layout_alignBottom="@+id/TotalText"
+        android:layout_toRightOf="@+id/relativeLayout1"
+        android:text="TotalCount:"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/UnAnsweredText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/WrongText"
+        android:text="UnAnswered: "
+        android:paddingTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CorrectText"
+        android:layout_centerVertical="true"
+        android:text="Total    :"
+        android:paddingTop="30dp"
+        android:paddingLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

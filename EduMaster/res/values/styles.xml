@@ -1,0 +1,73 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- =============================================================== -->
+ 	<!-- White styles                                                    -->
+	<!-- =============================================================== -->
+
+	<dimen name="page_margin_wh">5sp</dimen>
+ 	<dimen name="content_left_margin_wh">8sp</dimen>
+ 	
+ 	<style name="page_background_wh">
+ 		<item name="android:background">@drawable/gray_gradient_background</item>
+ 		<item name="android:padding">@dimen/page_margin_wh</item>
+ 	</style>
+ 	<style name="page_padding_layout_wh">
+ 		<item name="android:padding">@dimen/page_margin_wh</item>
+ 	</style> 	
+	<style name="text_title_wh">
+		<item name="android:background">@drawable/title_bar_wh</item>
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+		<item name="android:textColor">#FFF</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:shadowDx">1.0</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">3</item>
+		<item name="android:shadowColor">#888</item>
+	</style>
+	<style name="footer_bar">
+		<item name="android:background">@drawable/footer_bar</item>
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+		<item name="android:textColor">#FFF</item>
+		<item name="android:textSize">24sp</item>
+		<item name="android:shadowDx">1.0</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">3</item>
+		<item name="android:shadowColor">#888</item>
+	</style>			
+	<style name="text_large_wh">
+		<item name="android:textColor">@color/text_wh_large</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowColor">#888</item>
+	</style>
+	<style name="text_regular_wh">
+		<item name="android:textColor">@color/text_wh_regular</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+	<style name="white_background_wh">
+		<item name="android:background">@drawable/white_container_wh</item>
+		<item name="android:padding">10sp</item>
+		<item name="android:textColor">@color/text_wh_large</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">1</item>
+		<item name="android:shadowColor">#888</item>
+	</style>
+</resources>

@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:padding="10dp"
+    android:background="#003515"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+	<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#003515"
+    android:orientation="vertical"
+    tools:context=".StartScreenActivity"
+    tools:ignore="Overdraw" >
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:text="       Search Pincode       "
+        android:background="#999999"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button3"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="40dp"
+        android:background="#999999"
+        android:text="        Order Pincode        "
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="#999999"
+        android:text="  FeedBack/Complaint  "
+        android:textColor="#000000" />
+	</RelativeLayout>
+	</ScrollView>

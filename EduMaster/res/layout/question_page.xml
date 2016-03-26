@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+<LinearLayout
+        android:id = "@+id/TitleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        style="@style/text_title_wh">
+
+        <ImageButton
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/home14_48"/>
+
+        <TextView
+            android:id="@+id/TittleText"
+            android:layout_width="0dp"
+            android:paddingLeft="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.35"
+            android:text="Question Bank"/>
+    </LinearLayout>
+       <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_below="@+id/TitleLayout"
+        android:layout_above= "@+id/BottomReLayout">
+        <TextView
+        android:id="@+id/Question__Text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        style="@style/white_background_wh"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+        <ScrollView 
+    	android:id ="@+id/ScrolView"
+    	android:layout_width="fill_parent"
+    	android:layout_height="0dp" 
+    	android:layout_weight="3"
+    	android:clipChildren="true"
+        android:measureAllChildren="true"
+    	android:scrollbars="vertical|horizontal"
+    	android:background="#00FF00">
+     <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RadioButton
+        android:id="@+id/Answer_First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Answer A"
+        style="@style/text_regular_wh" />
+        <RadioButton
+                android:id="@+id/Answer_Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Answer B" 
+                style="@style/text_regular_wh"/>
+         <RadioButton
+                android:id="@+id/Answer_Third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Answer C"
+                style="@style/text_regular_wh" />
+         <RadioButton
+                android:id="@+id/Answer_Fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Answer D"
+                style="@style/text_regular_wh" />
+         <RadioButton
+                android:id="@+id/Answer_Fifth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="None of these" 
+                style="@style/text_regular_wh"/>
+     </RadioGroup>
+     </ScrollView>
+     </LinearLayout>
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/BottomReLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        style="@style/footer_bar">
+
+        <com.striquaint.edumaster.ClockButton
+            android:id="@+id/TimerAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40dp"
+            android:clickable="false"
+            android:src="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/arrow7_48" />
+
+    </RelativeLayout>	
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="Theme" parent="android:Theme">
+		<item name="pageMargin">2sp</item>
+		<item name="android:windowTitleSize">20dip</item>
+	</style>
+
+	<style name="Theme.White">
+		<item name="pageBackground">@style/page_background_wh</item>
+		<item name="pagePaddingLayout">@style/page_padding_layout_wh</item>		
+		<item name="textTitle">@style/text_title_wh</item>
+		<item name="textLarge">@style/text_large_wh</item>
+		<item name="whiteBackground">@style/white_background_wh</item>
+		<item name="pageMargin">@dimen/page_margin_wh</item>
+	</style>
+</resources>
